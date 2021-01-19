@@ -1,0 +1,210 @@
+/* VARIABLES */
+:root {
+    font-size: 16px;
+    --main-color: #ff6565;
+    --secondary-color: #071629;
+}
+
+a:hover,
+a:active {
+    color: var(--main-color);
+}
+button:hover,
+button:active {
+    opacity: 0.9;
+}
+
+.icon {
+    display: none;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    box-sizing: border-box;
+}
+.btn {
+    background-color: var(--main-color);
+    color: white;
+    width: 162px;
+    height: 44px;
+    border-radius: 25px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url(./images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 15px 13%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header {
+    width: 1000.39px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav--list {
+    display: flex;
+    justify-content: space-between;
+    width: 255px;
+    height: 15px;
+    list-style: none;
+}
+
+.header__nav--item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.header__nav--item a:hover,
+.header__nav--item a:active {
+    color: var(--main-color);
+}
+
+.header__nav--item {
+    font-size: 0.75rem;
+}
+
+.header__logo {
+    width: 161px;
+    height: 32px;
+}
+
+.hero__text {
+    width: 637px;
+    height: 313px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hero__text--title {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.hero__text--subtitle {
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.hero__text--button {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin: 20px 0px 40px 0px;
+}
+
+.hero__text--paragraph {
+    font-size: 0.75rem;
+}
+
+.whatwedo {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 15px 13%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.whatwedo__text {
+    width: 637px;
+    height: 184px;
+    margin: 60px 0px;
+}
+
+.whatwedo__text--title {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.whatwedo__text--paragraph {
+    font-size: 1rem;
+}
+
+.whatwedo__icons {
+    display: flex;
+    margin: 30px 0px;
+}
+
+.whatwedo__icons--element {
+    width: 207px;
+    height: 180px;
+}
+
+.whatwedo__icons--element--icon {
+    width: 62px;
+    height: 62px;
+}
+
+/* Media Querys */
+
+@media (max-width: 480px) {
+    :root {
+        font-size: 12px;
+    }
+    .header {
+        width: 100%;
+        height: initial;
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-content: center;
+    }
+    .icon {
+        display: block;
+        margin: auto 0;
+    }
+    .menu a {
+        color: white;
+    }
+    .header__logo {
+        margin-left: 70px;
+    }
+    .header__nav--list {
+        display: none;
+        flex-direction: column;
+        padding: 0px;
+        height: initial;
+    }
+    .header__nav--item {
+        margin: 5px 0;
+    }
+
+    .hero__text {
+        width: 357px;
+        margin-bottom: 30px;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .whatwedo__text {
+        width: 325px;
+        height: 288px;
+        margin: 10px 0px;
+    }
+
+    .whatwedo__icons {
+        flex-direction: column;
+    }
+}
