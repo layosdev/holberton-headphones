@@ -8,27 +8,27 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="4-style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script src="menu.js"></script>
 </head>
 
 <body>
     <section class="hero">
         <header class="header">
-            <div class="menu">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+            <div class="respmenu">
+                <input type="checkbox">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
                 <img class="header__logo" src="./images/logo_headphones.png" alt="Headphones Logo">
+                <nav>
+                    <ul id="myLinks" class="header__nav--list">
+                        <li class="header__nav--item"><a href="#">What we do</a></li>
+                        <li class="header__nav--item"><a href="#">Our results</a></li>
+                        <li class="header__nav--item"><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="header__nav">
-                <ul id="myLinks" class="header__nav--list">
-                    <li class="header__nav--item"><a href="#whatwedo">What we do</a></li>
-                    <li class="header__nav--item"><a href="#ourresults">Our results</a></li>
-                    <li class="header__nav--item"><a href="#contact">Contact us</a></li>
-                </ul>
-            </nav>
         </header>
         <div class="hero__text">
             <h1 class="hero__text--title">Lorem, ipsum dolor set amet lorem ipsum</h1>

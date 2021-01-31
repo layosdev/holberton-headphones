@@ -61,6 +61,18 @@ body {
     align-items: center;
 }
 
+.respmenu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.respmenu input,
+.respmenu i {
+    display: none;
+}
+
 .header__nav--list {
     display: flex;
     justify-content: space-between;
@@ -275,6 +287,75 @@ body {
         flex-direction: column;
         text-align: center;
     }
+    .header {
+        box-sizing: border-box;
+        width: 100%;
+        height: initial;
+        flex-direction: column;
+        text-align: center;
+        padding-right: 100px;
+    }
+
+    .respmenu {
+        box-sizing: border-box;
+        width: initial;
+        display: block;
+    }
+
+    .respmenu input,
+    .respmenu i {
+        display: block;
+    }
+
+    .respmenu input[type="checkbox"],
+    .respmenu .fa-bars,
+    .respmenu .fa-times {
+        position: absolute;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    .respmenu .fa-bars,
+    .respmenu .fa-times {
+        font-size: 30px;
+        pointer-events: none;
+    }
+
+    .respmenu input[type="checkbox"] {
+        opacity: 0;
+    }
+
+    .respmenu {
+        color: white;
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .respmenu nav {
+        display: none;
+    }
+
+    .respmenu input:checked ~ nav {
+        display: block;
+    }
+
+    .respmenu input:checked ~ .fa-bars {
+        transition: 0.2s ease-out;
+        display: none;
+    }
+
+    .respmenu input:not(:checked) ~ .fa-times {
+        transition: 0.2s ease-out;
+        display: none;
+    }
+
+    #myLinks > li {
+        margin-left: 90px;
+    }
     .menu {
         width: 100%;
         display: flex;
@@ -292,7 +373,6 @@ body {
         margin-left: 70px;
     }
     .header__nav--list {
-        display: none;
         flex-direction: column;
         padding: 0px;
         height: initial;
